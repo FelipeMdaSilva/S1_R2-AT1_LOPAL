@@ -4,9 +4,9 @@
         <attribute name="name" value="exercicio4"/>
         <attribute name="authors" value="I1D46B"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2026-03-18 02:23:23 "/>
+        <attribute name="saved" value="2026-03-18 02:57:10 "/>
         <attribute name="created" value="STFENDZCO0VDRlA1MDdEMTI2MzU5MjsyMDI2LTAzLTE4OyIwMjoyMTo0NSAiOzI0Mjc="/>
-        <attribute name="edited" value="STFENDZCO0VDRlA1MDdEMTI2MzU5MjsyMDI2LTAzLTE4OyIwMjoyMzoyMyAiOzE7MjUzMw=="/>
+        <attribute name="edited" value="STFENDZCO0VDRlA1MDdEMTI2MzU5MjsyMDI2LTAzLTE4OyIwMjo1NzoxMCAiOzI7MjUzNw=="/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
@@ -14,12 +14,19 @@
             <output expression="&quot;Digite um n&#250;mero&quot;" newline="True"/>
             <declare name="numero" type="Real" array="False" size=""/>
             <input variable="numero"/>
-            <if expression="numero &gt; 0">
+            <if expression="numero = 0">
                 <then>
-                    <output expression="&quot;N&#250;mero positivo&quot;" newline="True"/>
+                    <output expression="&quot;N&#250;mero &#233; 0&quot;" newline="True"/>
                 </then>
                 <else>
-                    <output expression="&quot;N&#250;mero negativo&quot;" newline="True"/>
+                    <if expression="numero &gt; 0">
+                        <then>
+                            <output expression="&quot;N&#250;mero positivo!&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;N&#250;mero negativo!&quot;" newline="True"/>
+                        </else>
+                    </if>
                 </else>
             </if>
         </body>
